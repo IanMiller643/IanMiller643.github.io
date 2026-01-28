@@ -1,0 +1,277 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+/*Styles */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+
+}
+
+body {
+    background-color: #F9F8F3;
+    color: #0F0706;
+    line-height: 1.5;
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -0.05em;
+}
+
+h3 {
+    color: #0F0706;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h1,
+h2 {
+    color: #8E9775;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+header {
+    border-bottom: 1px Solid #2E2E2E;
+    height: 80px;
+    background-color: #F9F8F3;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#page-nav {
+    display: flex;
+    gap: 10px;
+}
+
+#home {
+    color: #2E2E2E;
+    text-align: center;
+}
+
+#tagline {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+#intro {}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button {
+    border: 1px solid #8E9775;
+    padding: 10px 20px;
+    background-color: #8E9775;
+    color: #EAE7DC;
+    margin-top: 20px;
+    transition: background-color 0.5s ease-in-out 0s, transform 0.5s ease-in-out 0s;
+}
+
+.button:hover {
+    border: 2px solid #0F0706;
+    background-color: #EAE7DC;
+    color: #0F0706;
+}
+
+#about-me {
+    background-color: #EAE7DC;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 865px;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+
+}
+
+.skill-card {
+    border: 1px solid #EAE7DC;
+    border-radius: 2px;
+    padding: 7px 14px;
+    background-color: #8E9775;
+    color: #EAE7DC;
+}
+
+#project-section {}
+
+
+#projects {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+}
+
+#project-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    background-color: #EAE7DC;
+    padding: 20px 50px;
+}
+
+#project-image>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E9775;
+    border-radius: 5px;
+    border: 2px solid #2E2E2E;
+    height: 200px;
+}
+
+#project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.project-skill {
+    background-color: #8E9775;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: #EAE7DC;
+}
+
+.project-link {
+    border: 2px solid #2E2E2E;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact-card {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 20px;
+    background-color: #EAE7DC;
+    padding: 20px;
+    max-width: 865px;
+    border-radius: 8px;
+}
+
+#contact-text {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.form-input>input {
+    padding: 10px 20px;
+    background-color: #F9F8F3;
+    font-size: 1rem;
+    border: 1px solid #2E2E2E
+}
+
+.form-input>input:focus {
+    outline: none;
+    border: 3px solid #8E9775
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer {
+    border-top: 2px solid#8E9775;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+@media (min-width: 992px) {
+    #description {
+        flex-direction: row;
+    }
+
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #buttons {
+        flex-direction: row;
+    }
+}
